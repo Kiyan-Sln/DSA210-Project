@@ -4,6 +4,7 @@ This project examines the impact of weather conditions (temperature, rainfall, h
 Through data analysis and visualization, this project provides insights that could be valuable for coffee shop owners, marketers, and supply chain managers in optimizing their offerings based on expected weather conditions.
 
 Motivation
+
 Consumer behavior in coffee purchasing is influenced by multiple factors, including location, pricing, and seasonal trends. However, one critical yet often overlooked factor is weather conditions. Does weather impact sales patterns across different coffee shop brands in the same area? Does cold weather increase hot coffee sales while reducing iced beverage purchases? This project aims to analyze how weather patterns affect consumer preferences for different coffee shop brands in New York City.
 
 Objectives
