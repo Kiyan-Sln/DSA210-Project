@@ -20,6 +20,24 @@ Objectives:
 * Compare sales performance across different store locations under varying weather conditions.
 * Provide data-driven recommendations to help coffee shop businesses optimize inventory and marketing strategies.
 
+Hypothesis Testing:
+
+* Null Hypothesis (H0): Weather does not affect the type of selling (product category) in coffee shops.
+* Alternative Hypothesis (H1): Weather does affect the type of selling (product category) in coffee shops.
+
+We will perform statistical tests (e.g., Chi-square tests) to determine if weather conditions significantly influence sales trends for the different product categories offered by the coffee shops.
+
+Machine Learning (Classification):
+
+For the ML part, this project will involve multiclass classification to predict the product category (Coffee, Tea, Bakery, or Drinking Chocolate) based on weather and other relevant factors. This classification model can help us identify the most likely product category to sell based on specific weather conditions and other inputs.
+
+ML Steps are: 
+
+* Data Preprocessing: Clean the data, handle missing values, encode categorical variables, and normalize numerical features if necessary.
+* Feature Engineering: Incorporate weather data, time of year, exzplanation of sold products, location and other inputs as features to train the model.
+* Model Selection: Try classification algorithms such as Random Forest and Decision Trees
+* Model Evaluation: Evaluate models using metrics like accuracy, confusion matrix and cross-validation.
+
 Data:
 
 * Coffee Shop Sales Data: Sourced from Kaggle, containing sales records from three different coffee shop brands in New York City.
