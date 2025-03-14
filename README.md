@@ -13,6 +13,6 @@ Objectives
 * Provide data-driven recommendations for coffee businesses to adjust their strategies based on seasonal trends.
 
 Data:
-Find Data
 * Coffee Shop Sales Data: Sourced from Kaggle, containing sales records from three different coffee shop brands in New York City.
+* Coffee Shop data Kaggle link: https://www.kaggle.com/datasets/ahmedabbas757/coffee-sales
 * Weather Data: Will be collected later from official weather sources such as the Bureau of Meteorology (BoM), Weather Underground, or Kaggle weather datasets.
