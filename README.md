@@ -1,6 +1,6 @@
 # DSA210-Project
 
-This project explores how weather conditions influence the sales trends of different product categories in coffee shops. The dataset contains transaction data from three coffee shop brands operating in the same areas of New York City. The sales data is categorized into:
+This project explores how weather conditions influence the sales trends of different product categories in coffee shops. The dataset contains transaction data from three coffee shop brands operating in different areas of New York City. The sales data is categorized into:
 * Coffee (Drip coffee, espresso, brewed coffee)
 * Tea (Chai, herbal, and specialty teas)
 * Bakery (Pastries, muffins, sandwiches)
