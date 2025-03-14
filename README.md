@@ -16,7 +16,7 @@ Consumer preferences for coffee shop products vary based on multiple factors, in
 Objectives:
 
 * Analyze the correlation between weather conditions and sales trends for each product category.
-* Identify seasonal preferences—for example, does tea sell more in winter while iced coffee dominates in summer?
+* Identify short-term seasonal trends—for example, do certain products like hot drinks (tea, coffee) see higher sales on colder days, while iced beverages or bakery items peak on warmer days?
 * Compare sales performance across different store locations under varying weather conditions.
 * Provide data-driven recommendations to help coffee shop businesses optimize inventory and marketing strategies.
 
