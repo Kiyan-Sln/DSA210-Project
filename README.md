@@ -36,10 +36,10 @@ ML Steps are:
 * Data Preprocessing: Clean the data, handle missing values, encode categorical variables, and normalize numerical features if necessary.
 * Feature Engineering: Incorporate weather data, time of year, exzplanation of sold products, location and other inputs as features to train the model.
 * Model Selection: Try classification algorithms such as Random Forest and Decision Trees
-* Model Evaluation: Evaluate models using metrics like accuracy, confusion matrix and cross-validation.
+* Model Evaluation and Hyperparameter Tuning: Evaluate models using metrics like accuracy, confusion matrix, and cross-validation, while optimizing performance through hyperparameter tuning techniques such as Grid Search.
 
 Data:
 
 * Coffee Shop Sales Data: Sourced from Kaggle, containing sales records from three different coffee shop brands in New York City.
 * Coffee Shop data Kaggle link: https://www.kaggle.com/datasets/ahmedabbas757/coffee-sales
-* Weather Data: Will be collected later from official weather sources such as the Bureau of Meteorology (BoM), Weather Underground, or Kaggle weather datasets.
+* Weather Data: Will be collected later from official weather sources such as the Bureau of Meteorology (BoM), Weather Underground, or Kaggle weather datasets to enrich the data.
