@@ -1,17 +1,21 @@
 # DSA210-Project
 
-This project examines the impact of weather conditions (temperature, rainfall, humidity, and more) on coffee sales trends across three different coffee shop brands in different areas of New York City. By combining sales data with historical weather records, we seek to uncover whether customers' choice of coffee shop and product type (hot vs. iced drinks, specialty items, etc.) is influenced by daily weather fluctuations.
-Through data analysis and visualization, this project provides insights that could be valuable for coffee shop owners, marketers, and supply chain managers in optimizing their offerings based on expected weather conditions.
+This project explores how weather conditions influence the sales trends of different product categories in coffee shops. The dataset contains transaction data from three coffee shop brands operating in the same areas of New York City. The sales data is categorized into:
+* Coffee (Drip coffee, espresso, brewed coffee)
+* Tea (Chai, herbal, and specialty teas)
+* Bakery (Pastries, muffins, sandwiches)
+* Drinking Chocolate  (Hot chocolate and other cocoa-based drinks)
+By combining this transactional data with historical weather records, we aim to uncover whether daily temperature, rainfall, or seasonal changes impact customer preferences for different product types. The insights generated could help coffee shop owners adjust their menu offerings, pricing strategies, and marketing campaigns based on expected weather patterns.
 
 Motivation:
+Consumer preferences for coffee shop products vary based on multiple factors, including location, pricing, and seasonality. However, one key external factor that could influence purchasing decisions is weather conditions. This project aims to analyze whether temperature, rainfall, and other weather factors affect the sales of different coffee shop product categories—such as coffee, tea, bakery items, and drinking chocolate—across different locations in New York City.
 
-Consumer behavior in coffee purchasing is influenced by multiple factors, including location, pricing, and seasonal trends. However, one critical yet often overlooked factor is weather conditions. Does weather impact sales patterns across different coffee shop brands in different area? Does cold weather increase hot coffee sales while reducing iced beverage purchases? This project aims to analyze how weather patterns affect consumer preferences for different coffee shop brands in New York City.
 
 Objectives:
-* Analyze the correlation between daily weather patterns and coffee shop sales trends.
-* Compare customer preferences for different coffee shop brands under varying weather conditions.
-* Determine if weather impacts product type selection, such as hot vs. iced beverages.
-* Provide data-driven recommendations for coffee businesses to adjust their strategies based on seasonal trends.
+Analyze the correlation between weather conditions and sales trends for each product category.
+Identify seasonal preferences—for example, does tea sell more in winter while iced coffee dominates in summer?
+Compare sales performance across different store locations under varying weather conditions.
+Provide data-driven recommendations to help coffee shop businesses optimize inventory and marketing strategies.
 
 Data:
 * Coffee Shop Sales Data: Sourced from Kaggle, containing sales records from three different coffee shop brands in New York City.
