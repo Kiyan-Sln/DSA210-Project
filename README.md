@@ -74,8 +74,8 @@ These helped shape our hypotheses and understand the context behind the sales tr
 
 Hypothesis Testing
 Hypotheses:
-* Null Hypothesis (H₀): Weather variables do not affect product category (i.e., the mean value of the selected weather variable is the same across all product categories).
-* Alternative Hypothesis (H₁): At least one product category has a different mean value for the selected weather variable (weather does affect product_category).
+* Null Hypothesis (H0): Weather variables do not affect product category (i.e., the mean value of the selected weather variable is the same across all product categories).
+* Alternative Hypothesis (H1): At least one product category has a different mean value for the selected weather variable (weather does affect product_category).
 
 Method: One-Way ANOVA->
 We performed one-way ANOVA tests for each weather-related column, comparing the average values across different product categories (e.g., coffee vs. tea). This allows us to detect if, for example, coffee tends to be sold more often in colder or cloudier conditions than tea.
