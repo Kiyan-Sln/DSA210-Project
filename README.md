@@ -65,11 +65,17 @@ The only column with missing data was preciptype (rain, snow, etc.). Instead of 
 5) Visualizations:
 Several visualizations were used to uncover insights from the data:
 *Most frequently sold product types.
+
 *Distribution of product categories.
+
 *Peak sales times by hour.
+
 *Temperature distribution across product categories.
+
 *Correlation matrix of weather features.
+
 *Differences between actual temperature and "feels like" temperature.
+
 These helped shape our hypotheses and understand the context behind the sales trends.
 
 Hypothesis Testing
