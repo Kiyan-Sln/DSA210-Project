@@ -45,8 +45,43 @@ Data:
 * Weather Data: Will be collected later from official weather sources such as the Bureau of Meteorology (BoM), Weather Underground, or Kaggle weather datasets to enrich the data.
 
 
-Explortory data analysis methods and Hypothesis testing:
-I downloaded New York's weather data from visualcrossing.com website to enrich my coffee shop sells data with it. It has hourly data of New York for first 6 months of the 2023(as coffee shop selling data that is for first six month of 2023), in each of them there are some columns that seems useless to our main goal which is find relation between data and weather, and predict produt category base on other columns as inputs. for example price of the unit is useless for weather or predicting cause we can understand the price after the prediction and knowing the price of something that we want to predict is is useless. I tried to combine both data with respect to their hour. It means for all data of coffee shop between 2 specific hours, I put same weather data for that hour for all of them. For example, for the selling data between 7-8 am, I put weather data of 7am for all of them.
-In combined data we try to add more columns to our data with combination of other columns to not only use raw data. For example we can have a column which contain mean percentage of cloud cover and precipitation probability.
-Then we try to handle NaN values which which we see only in precipitation type(rain, snow) that means the weather contains none of them, so instead of drop those rows we write nothing instead of NaN values so we know it was no rain or snow.
-Then we have some visualizations 
+Exploratory Data Analysis Methods
+To enrich the coffee shop sales data, I integrated hourly weather data for New York City from VisualCrossing.com, covering the first six months of 2023—which matches the time span of the coffee shop dataset.
+
+ Data Merging Strategy
+Since the coffee sales data includes timestamps down to the minute, and the weather dataset is hourly, I matched weather data to each transaction based on the hour. That is, for every sale between 7:00–7:59 AM, the weather conditions recorded at 7:00 AM were assigned.
+
+ Feature Selection & Engineering
+To focus the analysis on weather impact on product sales, certain columns—like unit_price—were dropped, as price is not useful when attempting to predict product category based on weather.
+In addition to the raw columns, I created new derived features by combining existing ones. For example:
+*humidity_prec_percentage: A combined feature representing the average of humidity and precipitation probability.
+*cloud_rain_percentage: An engineered metric showing the relationship between cloud cover and chance of rain.
+This kind of feature engineering allows us to capture more nuanced patterns than the raw data alone.
+
+ Handling Missing Values
+The only column with missing data was preciptype (rain, snow, etc.). Instead of dropping those rows, I filled NaN with 'None', indicating that there was no precipitation during those periods.
+
+ Visualizations
+Several visualizations were used to uncover insights from the data:
+*Most frequently sold product types.
+*Distribution of product categories.
+*Peak sales times by hour.
+*Temperature distribution across product categories.
+*Correlation matrix of weather features.
+*Differences between actual temperature and "feels like" temperature.
+
+These helped shape our hypotheses and understand the context behind the sales trends.
+
+Hypothesis Testing
+ Hypotheses:
+*Null Hypothesis (H₀): Weather variables do not affect product_category (i.e., their means are the same across categories).
+*Alternative Hypothesis (H₁): At least one weather variable’s mean differs between product categories (weather does affect product_category).
+
+ Method: One-Way ANOVA
+We performed one-way ANOVA tests for each weather-related column, comparing the average values across different product categories (e.g., coffee vs. tea). This allows us to detect if, for example, coffee tends to be sold more often in colder or cloudier conditions than tea.
+
+ Results Summary
+Weather features that had p-values below 0.05 are considered statistically significant, meaning they likely affect the product category:
+snowdepth, precipprob, cloud_rain_percentage, cloudcover, solarradiation, solarenergy, visibility, humidity_prec_percentage, precip, windgust, temp, feelslike, humidity
+
+On the other hand, variables like snow, dew, and windspeed had p-values above 0.05, so we fail to reject the null hypothesis for them—no significant evidence that they affect product category.
