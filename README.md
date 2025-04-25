@@ -54,7 +54,7 @@ Since the coffee sales data includes timestamps down to the minute, and the weat
 
 3) Feature Selection & Engineering:
 To focus the analysis on weather impact on product sales, before combining, certain columns—like unit_price—were dropped, as price is not useful when attempting to predict product category based on weather.
-In addition to the raw columns, I created new derived features by combining existing ones. For example:
+After combining, in addition to the raw columns, I created new derived features by combining existing ones. For example:
 * humidity_prec_percentage: A combined feature representing the average of humidity and precipitation probability.
 * cloud_rain_percentage: An engineered metric showing the relationship between cloud cover and chance of rain.
 This kind of feature engineering allows us to capture more nuanced patterns than the raw data alone.
