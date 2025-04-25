@@ -55,8 +55,8 @@ Since the coffee sales data includes timestamps down to the minute, and the weat
 3) Feature Selection & Engineering:
 To focus the analysis on weather impact on product sales, certain columns—like unit_price—were dropped, as price is not useful when attempting to predict product category based on weather.
 In addition to the raw columns, I created new derived features by combining existing ones. For example:
-*humidity_prec_percentage: A combined feature representing the average of humidity and precipitation probability.
-*cloud_rain_percentage: An engineered metric showing the relationship between cloud cover and chance of rain.
+* humidity_prec_percentage: A combined feature representing the average of humidity and precipitation probability.
+* cloud_rain_percentage: An engineered metric showing the relationship between cloud cover and chance of rain.
 This kind of feature engineering allows us to capture more nuanced patterns than the raw data alone.
 
 4) Handling Missing Values:
@@ -74,8 +74,8 @@ These helped shape our hypotheses and understand the context behind the sales tr
 
 Hypothesis Testing
 Hypotheses:
-*Null Hypothesis (H₀): Weather variables do not affect product_category (i.e., their means are the same across categories).
-*Alternative Hypothesis (H₁): At least one weather variable’s mean differs between product categories (weather does affect product_category).
+* Null Hypothesis (H₀): Weather variables do not affect product_category (i.e., their means are the same across categories).
+* Alternative Hypothesis (H₁): At least one weather variable’s mean differs between product categories (weather does affect product_category).
 
 Method: One-Way ANOVA->
 We performed one-way ANOVA tests for each weather-related column, comparing the average values across different product categories (e.g., coffee vs. tea). This allows us to detect if, for example, coffee tends to be sold more often in colder or cloudier conditions than tea.
