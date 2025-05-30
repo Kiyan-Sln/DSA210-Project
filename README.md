@@ -85,3 +85,44 @@ Weather features that had p-values below 0.05 are considered statistically signi
 snowdepth, precipprob, cloud_rain_percentage, cloudcover, solarradiation, solarenergy, visibility, humidity_prec_percentage, precip, windgust, temp, feelslike, humidity
 
 On the other hand, variables like snow, dew, and windspeed had p-values above 0.05, so we fail to reject the null hypothesis for them—no significant evidence that they affect product category.
+
+
+ML part:
+
+* Column Dropping:
+To improve model performance and reduce noise, I dropped columns that were not useful for predicting the product category—particularly those reflecting outcomes of an order (e.g., quantity), which happen during or after the prediction target. These variables wouldn't help in determining the category beforehand.
+
+* Merge and encode data:
+The target variable, product_category, was highly imbalanced based on out prior visualizations. So, I kept the top 3 most frequent categories (Coffee, Tea, and Bakery) and grouped the rest under a new "Other" class. This reduced the number of categories to 4 and made the prediction task more manageable.
+Next, all categorical columns (like weather conditions and icons) and product_category were label-encoded into numerical format to be compatible with machine learning models. I also extracted features like hour and weekday from timestamps, as product demand can depend heavily on week day and weekend and hour.
+
+ * Standardize data:
+Since I had negative and data with different range, I tried to standardize my data before prediction to have more consistent data.
+
+* Split data:
+I split my data to 20% testing and 80% training and tried to work with them
+
+* Models:
+I worked and tried 7 different ML models :
+* Decision Tree
+* Random Forest
+* KNN
+* XGBoost
+* Naive Bayes
+* Gradient Boosting
+* Logistic Regression
+Each model was evaluated based on accuracy and fairness (how well it predicted across all 4 classes, not just the dominant one).
+* XGBoost: gave the highest accuracy and relatively fair predictions.
+* Random Forest: performed well too, slightly behind XGBoost.
+* Naive Bayes: performed the worst overall.
+However, KNN and Logistic Regression struggled with low accuracy due to class imbalance and we know they are sensitiv to imbalance which is our case. To address this, I applied SMOTE (Synthetic Minority Over-sampling Technique), which creates synthetic examples of minority classes and try to handle data imbalance. This slightly improved results for these two models but not enough to outperform XGBoost or Random Forest.
+
+* Using grid-search, cross-validation and sample weight for best models:
+I applied GridSearchCV with cross-validation for XGBoost and Random Forest to find the best hyperparameters. The output for both was overfitting over some categories and do not predict other categories. I also tested training with sample weights to handle class imbalance. Using sample weights led to more balanced predictions across classes but significantly reduced overall accuracy.The base models (without Grid Search or sample weights) had better accuracy and performace.
+
+* Final Model selection:
+The XGBoost base model outperformed all others in terms of accuracy and acceptable fairness(even compair to grid search and sample weight ones).
+Therefore, it is selected as the final model for this prediction task.
+Random Forest (base) is a close second and could serve as a solid alternative.
+
+
