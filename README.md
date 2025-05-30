@@ -116,6 +116,7 @@ Each model was evaluated based on accuracy and fairness (how well it predicted a
 * XGBoost: gave the highest accuracy and relatively fair predictions.
 * Random Forest: performed well too, slightly behind XGBoost.
 * Naive Bayes: performed the worst overall.
+
 However, KNN and Logistic Regression struggled with low accuracy due to class imbalance and we know they are sensitiv to imbalance which is our case. To address this, I applied SMOTE (Synthetic Minority Over-sampling Technique), which creates synthetic examples of minority classes and try to handle data imbalance. This slightly improved results for these two models but not enough to outperform XGBoost or Random Forest.
 
 * Using grid-search, cross-validation and sample weight for best models:
