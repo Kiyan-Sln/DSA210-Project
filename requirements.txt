@@ -2,3 +2,18 @@ pandas
 matplotlib.pyplot
 seaborn
 scipy.stats 
+sklearn.preprocessing
+sklearn.model_selection 
+sklearn.tree
+sklearn.metrics
+sklearn.ensemble 
+sklearn.neighbors
+xgboost
+numpy
+sklearn.naive_bayes
+sklearn.ensemble
+klearn.linear_model
+imblearn.over_sampling
+sklearn.utils.class_weight
+pip install imbalanced-learn
+pip install xgboost
