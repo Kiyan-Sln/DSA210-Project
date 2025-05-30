@@ -111,6 +111,7 @@ I worked and tried 7 different ML models :
 * Naive Bayes
 * Gradient Boosting
 * Logistic Regression
+
 Each model was evaluated based on accuracy and fairness (how well it predicted across all 4 classes, not just the dominant one).
 * XGBoost: gave the highest accuracy and relatively fair predictions.
 * Random Forest: performed well too, slightly behind XGBoost.
